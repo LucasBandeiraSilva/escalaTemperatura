@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Conversor de temperatura</title>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <form action="" id="form">
+          <div id="title">Conversor de temperatura</div>
+          <div class="input">
+            <label>Valor da temperatura na escala celsius</label>
+            <input type="number" placeholder="Grau Celsius" id="celsius" />
+          </div>
+          <div class="input">
+            <label> Valor da temperatura na escala fahrenheit</label>
+            <input
+              type="number"
+              placeholder="Grau Fahrenheit"
+              id="fahrenheit"
+            />
+          </div>
+          <div class="input">
+            <label> Valor da temperatura na escala Kelvin</label>
+            <input type="number" placeholder="Grau Kelvin" id="kelvin" />
+          </div>
+
+          <div class="btn">
+            <button type="submit">enviar</button>
+          </div>
+          <br>
+          <div class="btn">
+            <button type="reset">Reiniciar</button>
+          </div>
+        </form>
+        <div id="resultado"></div>
+      </div>
+    </main>
+    <script src="../JavaScript/converter.js"></script>
+  </body>
+</html>
