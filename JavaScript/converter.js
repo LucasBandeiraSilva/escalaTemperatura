@@ -54,5 +54,9 @@ addEventListener("submit", (evento) => {
   addEventListener("reset",(evento)=>{
     document.getElementById("form").reset();
     resultado.textContent = "";
+    celsiusInput.disabled = false;
+    kelvinInput.disabled = false;
+    fahrenheitInput.disabled = false;
+
   })
 });
