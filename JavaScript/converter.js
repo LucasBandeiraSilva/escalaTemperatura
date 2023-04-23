@@ -39,7 +39,7 @@ addEventListener("submit", (evento) => {
     resultado.textContent = `${celsiusInput.value} C° se equivale a ${celsiusF} °F  e também ${celsiusK} K°`;
  
   } else if (fahrenheitInput.value != "") {
-    let fahrenheitC = (fahrenheitInput.value - 32) / 1.8;
+    let fahrenheitC = ((fahrenheitInput.value - 32) / 1.8).toFixed(2);
     //let fahrenheiK = (parseFloat(fahrenheitInput.value) + 459.67) * 5/9; tambem funciona
     let fahrenheitK = ((parseFloat(fahrenheitInput.value) + 459.67) / 1.8).toFixed(2);
     resultado.textContent = `${fahrenheitInput.value} F° se equivale a ${fahrenheitC} °C e também ${fahrenheitK} K°`;
